@@ -8,15 +8,15 @@ import java.util.*;
  * @author leon on 30/01/2019.
  */
 public class ItemSorter implements Comparator<Item> {
-    List<Item> itemList = new ArrayList();
+    List<Item> itemList; //
 
     public ItemSorter(Item[] items) {
-        this.itemList = Arrays.asList(items);
+        this.itemList = Arrays.asList(items);//
     }
 
     public Item[] sort(Comparator<Item> comparator) {
-         Collections.sort(itemList,comparator);
-         return (Item[]) itemList.toArray();
+         Collections.sort(itemList,comparator);//
+         return (Item[]) itemList.toArray();//
     }
 
     public int compare(Item o1, Item o2) {
